@@ -31,7 +31,6 @@ export default class Interval {
             b = Math.round(100000 * ggbApplet.getValue('temp2')) / 100000;
             ggbApplet.deleteObject('temp1');
             ggbApplet.deleteObject('temp2');
-            console.log(a, b);
         
         } else alert('Enter a valid interval');
         // test endpoint inclusion

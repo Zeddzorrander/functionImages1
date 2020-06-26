@@ -10,7 +10,7 @@ export function updateDomain(domain) {
     ggbApplet.setVisible('domain', true);
     ggbApplet.setValue('a', domain.leftEndpt);
     ggbApplet.setValue('b', domain.rightEndpt);
-    ggbApplet.evalCommand(`domain: min ${domain.leftIneq} x ${domain.rightIneq} max`);
+    ggbApplet.evalCommand(`domain: a ${domain.leftIneq} x ${domain.rightIneq} b`);
 }
 
 export function updateRange(range) {
@@ -103,7 +103,7 @@ export function calcRange(domain) {
     const strg = `${leftIneq === '<=' ? '[' : '('}${min}, ${max}${rightIneq === '<=' ? ']' : ')'}`;
     let leftEndpt = min;
     let rightEndpt = max;
-    return { leftIneq, rightIneq, leftEndpt, rightEndpt, strg };
+    return { leftIneq, rightIneq, leftEndpt, rightEndpt, strg, f_a, f_b };
 }
 
 function getRoundedValue(obj) {
