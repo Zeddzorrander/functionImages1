@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <title></title>
+</head>
+<body>
+    <header>
+        <h1>\[\frac{dy}{dx}\]</h1>
+        <h1>Calculus I</h1>
+        <h1>\[\int_a^b{f(x)dx}\]</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>Function Images and "Nearness" in a Limiting Context</h2>
+            <section class="directions">
+                <h3 id="h_directions">General Directions</h3>
+                <p id="p_directions">Use this graphing app to help you answer the questions on the Function Images activity handout.  Use the "Part" buttons below to change the graph to allow you to answer the questions in each part of the handout. </p>
+            </section>
+            <nav>
+                <ul>
+                    <li><button id="part1">Part 1</button></li>
+                    <li><button id="part2">Part 2</button></li>
+                    <li><button id="part3">Part 3</button></li>
+                </ul>
+            </nav>
+            <div class="container">
+                <div class="wrapper">
+                    <section class="input" id="user_input1" style="display: none;">
+                        <h3>User Input</h3>
+                        <p>Space for users to input functions or other information to start geogebra app.</p>
+                    </section>
+                    <div id="ggbApplet"></div>
+                </div>
+                <div class="wrapper">
+                    <section class="input" id="user_inputPart1" style="display: none">
+                        <h3 id="h3_input1">Domain Input</h3>
+                        <p id="p_input1">
+                            Enter the restricted domain: <input id="domain" placeholder="Enter as an interval" type="text"><button id="submit1">Submit</button>
+                        </p>
+                    </section>
+                    <section class="input" id="user_inputPart2" style="display: none">
+                        <h3 id="h3_input2">Range Input</h3>
+                        <p id="p_input2">
+                            Enter the desired subset of the range: <input id="range" placeholder="Enter as an interval" type="text"><button id="submit2">Submit</button>
+                        </p>
+                    </section>
+                    <section class="input" id="user_inputPart3" style="display: none">
+                        <h3 id="h3_input3">Range Input</h3>
+                        <p id="p_input3">
+                            Enter the center of the desired subset of the range: <input id="center" placeholder="center" type="text"> <br>
+                            Enter the radius of the desired subset of the range: <input id="radius" placeholder="radius" type="text"> <br>
+                            <button id="submit3">Submit</button>
+                        </p>
+                    </section>
+                    <section class="output" id="feedback" style="display: none;">
+                        <h3>Feedback</h3>
+                        <p id="p_feedback"></p>
+                        <p id="p_feedbackBtnsDomain">
+                            <button id="prevDom_button">Previous Interval</button>
+                            <button id="nextDom_button">Next Interval</button>
+                            <button id="newDom_button">New Domain</button>
+                        </p>
+                        <p id="p_feedbackBtnsRange" style="display: none;">
+                            <button id="newRange_button">New Range</button>
+                        </p>
+                        <p id="p_pt3Btns" style="display: none;">
+                            <button id="newRangept3_button">New Range</button>
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>Created by Kevin James</footer>
+</body>
+</html>

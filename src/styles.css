@@ -1,0 +1,108 @@
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;;
+    font: 1.2em;
+    margin: 0 auto;
+    background-image: url(images/noise.png);
+    background-repeat: repeat;
+
+}
+
+h1,
+h2, h3 {
+    font-family: 'Cinzel',Copperplate, Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 2px grey;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h3{ 
+    font-size: 1.5em;
+}
+article {
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 0 0 1em;
+    background-image: /*url(images/derivative.svg), url(images/integral.svg), */linear-gradient(black, blue, black);
+    background-repeat: no-repeat;
+    /*background-position: 10% center, 90% center;*/
+    text-align: center;
+    padding: 1em;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px black;
+    color: white;
+}
+
+header h1:nth-child(odd) {
+    font-size: 1.7rem;
+}
+
+footer {
+    text-align: right;
+    padding-right: 1em;
+    margin: 1em auto;
+    border-top: 2px solid black;
+    padding-top: 1em;
+}
+
+button { 
+    font-family: inherit; 
+    font-size: 100%; 
+    box-sizing: border-box; 
+    padding: 10px; margin: 0.5em; 
+    border-radius: 10px;
+    box-shadow: none;
+    background-color: darkblue;
+    color: white;
+    border: 4px double cornflowerblue;
+
+    
+} 
+
+button:hover {
+    background-color: cornflowerblue;
+    color: black;
+    border: 4px double darkblue;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+ }
+
+
+textarea { 
+    overflow: auto;
+}
+
+.wrapper {
+    margin-left: 1em;
+}
+.directions {
+    margin-left: 1em;
+    max-width: 700px;
+}
+#ggbApplet {
+    width: 800px;
+    height: 600px;
+    border: 2px solid black;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
