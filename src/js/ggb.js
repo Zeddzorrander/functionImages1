@@ -2,6 +2,10 @@ export function loadCodebase(codeBase) {
     ggbApplet.setBase64(codeBase);
 }
 
+export function getCodebase() {
+    return ggbApplet.getBase64();
+}
+
 export function newConstruction() {
     ggbApplet.newConstruction();
 }
